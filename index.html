@@ -6,41 +6,41 @@
     <title>Online Bookstore</title>
 </head>
 <body>
-    <!-- Site title -->
+    <!-- Site title and header -->
     <header>    
         <h1>Heavenly Reads</h1>
 
         <!-- Main navigation menu -->
-         <nav>
+        <nav>
             <ul class="nav-list">
-                 <li><a href="#">Home</a></li>
+                <li><a href="#">Home</a></li>
                 <li><a href="#">Shop</a></li>
                 <li><a href="#">Categories</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
-         </nav>
+        </nav>
 
-          <!-- Search bar for finding books -->
-          <form class="search-bar">
-                <input type="text" placeholder="Search for books.." />
-                <button type="submit">Search</button>
-            </form>
+        <!-- Search bar -->
+        <form class="search-bar">
+            <input type="text" placeholder="Search for books..." />
+            <button type="submit">Search</button>
+        </form>
 
-        <!-- User account and cart placeholders-->    
-         <div class="header-icons">
+        <!-- User account and cart placeholders -->    
+        <div class="header-icons">
             <a href="#" class="account">Account</a>
             <a href="#" class="cart">Cart (0)</a>
-         </div>
+        </div>
     </header>
     
-    <!-- Main content of the page-->
-     <main>
+    <!-- Main content -->
+    <main>
 
-        <!-- Section for featured books-->
-         <section class="featured-books">
+        <!-- Featured Books Section -->
+        <section class="featured-books">
             <h2>Featured Books</h2>
 
-            <!-- Categories navigation-->
+            <!-- Categories navigation -->
             <nav class="categories-nav">
                 <ul>
                     <li><a href="#">Fiction</a></li>
@@ -51,127 +51,124 @@
                 </ul>
             </nav>
 
-        <!-- List of featured books-->
-     <ul class="book-list">
-          <li class="book-item">
-            <article class="book-item category-science"> 
-                 <h3>The Art of Coding</h3>
-                 <p class="rating">★★★★☆</p>
-                 <p>A beginner-friendly guide to programming concepts</p>
-                 <p class="price">$19.99</p>
-                 <button class="add-to-cart">Add to cart</button>
-                 <img src="book1.jpg" alt="Cover of the Art of Coding book">
-             </article>
+            <!-- List of featured books -->
+            <ul class="book-list">
+                <li>
+                    <article class="book-item category-science"> 
+                        <h3>The Art of Coding</h3>
+                        <p class="rating">★★★★☆</p>
+                        <p>A beginner-friendly guide to programming concepts</p>
+                        <p class="price">$19.99</p>
+                        <button class="add-to-cart">Add to cart</button>
+                        <img src="book1.jpg" alt="Cover of The Art of Coding book">
+                    </article>
                 </li>
 
-            <li class="book-item">
-                <article class="book-item category-science">
-                <h3>Web Development Essentials</h3>
-                <p class="rating">★★★★☆</p>
-                <p>Learn how to build modern websites using HTML, CSS and JavaScript</p>
-                <p class="price">$24.99</p>
-                <button class="add-to-cart">Add to cart</button>
-                <img src="book2.jpg" alt="Cover of Web Development Essentials">
-                </article>
-            </li>
+                <li>
+                    <article class="book-item category-science">
+                        <h3>Web Development Essentials</h3>
+                        <p class="rating">★★★★☆</p>
+                        <p>Learn how to build modern websites using HTML, CSS, and JavaScript</p>
+                        <p class="price">$24.99</p>
+                        <button class="add-to-cart">Add to cart</button>
+                        <img src="book2.jpg" alt="Cover of Web Development Essentials">
+                    </article>
+                </li>
 
-            <li class="book-item">
-               <article class="book-item category-science">
-                <h3>Design Patterns Explained</h3>
-                <p class="rating">★★★★★★</p>
-                <p>Understand common design patterns and how to implement them</p>
-                <p class="price">$27.99</p>
-                <button class="add-to-cart">Add to cart</button>
-                <img src="book3.jpg" alt="Cover of Design Patterns Explained book">
-            </article>
-            </li>
-         </ul>    
-         </section>
+                <li>
+                    <article class="book-item category-science">
+                        <h3>Design Patterns Explained</h3>
+                        <p class="rating">★★★★☆</p>
+                        <p>Understand common design patterns and how to implement them</p>
+                        <p class="price">$27.99</p>
+                        <button class="add-to-cart">Add to cart</button>
+                        <img src="book3.jpg" alt="Cover of Design Patterns Explained">
+                    </article>
+                </li>
+            </ul>
+        </section>
 
-         <!-- Section for New Arrivals -->
-          <section class="new-arrivals">
+        <!-- New Arrivals Section -->
+        <section class="new-arrivals">
             <h2>New Arrivals</h2>
 
-            <!-- List of new books -->
-             <ul class="book-list">
-            <li class="book-item">
-                <article class="book-item category-science">
-                    <h3>Mastering JavaScript</h3>
-                    <p class="rating">★★★★☆</p>
-                    <p>Advanced guide to becoming a JavaScript pro</p>
-                    <p class="price">$27.99</p>
-                    <button class="add-to-cart">Add to cart</button>
-                    <img src="book4.jpg" alt="Cover of Mastering JavaScript book">
-                </article>
+            <ul class="book-list">
+                <li>
+                    <article class="book-item category-science">
+                        <h3>Mastering JavaScript</h3>
+                        <p class="rating">★★★★☆</p>
+                        <p>Advanced guide to becoming a JavaScript pro</p>
+                        <p class="price">$27.99</p>
+                        <button class="add-to-cart">Add to cart</button>
+                        <img src="book4.jpg" alt="Cover of Mastering JavaScript">
+                    </article>
                 </li>
 
-              <li class="book-item">
-              <article class="book-item category-science">
-                    <h3>Python for Everyone</h3>
-                    <p class="rating">★★★★☆</p>
-                    <p>Learn Python Programming from scratch</p>
-                    <p class="price">$22.50</p>
-                    <button class="add-to-cart">Add to cart</button>
-                    <img src="book5.jpg" alt="Cover of Python for Everyone book">
-                </article>
+                <li>
+                    <article class="book-item category-science">
+                        <h3>Python for Everyone</h3>
+                        <p class="rating">★★★★☆</p>
+                        <p>Learn Python programming from scratch</p>
+                        <p class="price">$22.50</p>
+                        <button class="add-to-cart">Add to cart</button>
+                        <img src="book5.jpg" alt="Cover of Python for Everyone">
+                    </article>
                 </li>
-             </ul>
-          </section>
+            </ul>
+        </section>
 
-          <!-- Section for Best Sellers -->
-           <section class="best-sellers">
-                <h2>Best Sellers</h2>
+        <!-- Best Sellers Section -->
+        <section class="best-sellers">
+            <h2>Best Sellers</h2>
 
-          <!-- List of best selling books -->  
-           <ul class="book-list">
-                <li class="book-item">
-                   <article class="book-item category-science">
-                    <h3>Clean Code</h3>
-                    <p class="rating">★★★★★★</p>
-                    <p>A handbook of agile software craftsmanship</p>
-                    <p class="price">$30.00</p>
-                    <button class="add-to-cart">Add to cart</button>
-                    <img src="book6.jpg" alt="Cover of Clean Code book">
-                    </article>   
+            <ul class="book-list">
+                <li>
+                    <article class="book-item category-science">
+                        <h3>Clean Code</h3>
+                        <p class="rating">★★★★☆</p>
+                        <p>A handbook of agile software craftsmanship</p>
+                        <p class="price">$30.00</p>
+                        <button class="add-to-cart">Add to cart</button>
+                        <img src="book6.jpg" alt="Cover of Clean Code">
+                    </article>
                 </li>
 
-             <li class="book-item">
-                <article class="book-item category-science">
-                    <h3>Design Patterns</h3>
-                    <p class="rating">★★★★☆</p>
-                    <p>Elements of reusable object-orientated software</p>
-                    <p class="price">$35.00</p>
-                    <button class="add-to-cart">Add to cart</button>
-                    <img src="book7.jpg" alt="Cover of Design Patterns book">
-                 </article>
-              </li>
+                <li>
+                    <article class="book-item category-science">
+                        <h3>Design Patterns</h3>
+                        <p class="rating">★★★★☆</p>
+                        <p>Elements of reusable object-oriented software</p>
+                        <p class="price">$35.00</p>
+                        <button class="add-to-cart">Add to cart</button>
+                        <img src="book7.jpg" alt="Cover of Design Patterns">
+                    </article>
+                </li>
 
-            <li class="book-item">
-                 <article class="book-item category-science">
-                    <h3>You Don't Know JS</h3>
-                    <p class="rating">★★★★★★</p>
-                    <p>Deep dive into JavaScript fundamentals</p>
-                    <p class="price">$24.99</p>
-                    <button class="add-to-cart">Add to cart</button>
-                    <img src="book8.jpg" alt="Cover of You Don't Know JS book">
-                 </article>
-            </li>
-           </ul>    
-           </section>
+                <li>
+                    <article class="book-item category-science">
+                        <h3>You Don't Know JS</h3>
+                        <p class="rating">★★★★☆</p>
+                        <p>Deep dive into JavaScript fundamentals</p>
+                        <p class="price">$24.99</p>
+                        <button class="add-to-cart">Add to cart</button>
+                        <img src="book8.jpg" alt="Cover of You Don't Know JS">
+                    </article>
+                </li>
+            </ul>
+        </section>
 
-     </main>
+    </main>
 
-     <!-- Footer section: contains additional information-->
-      <footer>
+    <!-- Footer -->
+    <footer>
         <p>&copy; 2026 Heavenly Reads. All rights reserved</p>
-     <!-- Footer navigation -->  
-      <nav>
-        <ul>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Terms of Service</a></li>
-            <li><a href="#">Help</a></li>
-        </ul>
-      </nav> 
-      </footer>
+        <nav>
+            <ul>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>
