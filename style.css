@@ -108,9 +108,11 @@ header form.search-bar button:hover {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 25px;
     margin-top: 20px;
+    align-items: stretch;
 }
 
 .book-item {
+    height: 100%;
     background-color: white;
     padding: 15px;
     border-radius: 6px;
@@ -121,6 +123,12 @@ header form.search-bar button:hover {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+.book-item article {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 .book-item article:hover {
     transform: translateY(-4px);
     box-shadow: 0, 4px 14px rgba(0, 0, 0, 0.12);
@@ -129,8 +137,8 @@ header form.search-bar button:hover {
 
 .book-item img {
     width: 100%;
-    height: auto;   
-    margin-top: 10px;
+    height: 220px;   
+    object-fit: cover;
     border-radius: 4px;
 }
 
