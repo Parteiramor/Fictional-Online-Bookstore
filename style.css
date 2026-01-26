@@ -101,3 +101,60 @@ header form.search-bar button:hover {
 .header-icons a:hover {
     text-decoration: underline;
 }
+
+.book-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.book-item {
+    background-color: white;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.book-item article:hover {
+    transform: translateY(-4px);
+    box-shadow: 0, 4px 14px rgba(0, 0, 0, 0.12);
+
+}
+
+.book-item img {
+    width: 100%;
+    height: auto;   
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+.price {
+    font-weight: bold;
+    color: #4a90e2;
+}
+
+.rating {
+    color: #f5a623;
+}
+
+.add-to-cart {
+    margin-top: auto;
+    padding: 8px;
+    border: none;
+    background-color: #4a90e2;
+    color: white;
+    font-weight: bold;
+    border-radius:4px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: #357abd;
+}
+
