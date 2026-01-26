@@ -17,11 +17,11 @@ body {
 header {
     background-color: #4a90e2;
     color: white;
-    padding: 20px;
+    padding: 15px 30px;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    gap: 20px;
 }
 
 /* Site title*/
@@ -30,10 +30,15 @@ header h1 {
 }
 
 /* Navigation menu */
+header nav {
+    flex: 2;
+}
+
 header nav ul.nav-list {
     list-style: none;
     display: flex;
     gap: 25px;  
+    justify-content: center;
 }
 
 header nav ul.nav-list li a {
@@ -51,6 +56,8 @@ header nav ul.nav-list li a:hover {
     display: flex;
     align-items: center;
     gap: 15px;
+    flex: 1;
+    justify-content: flex-end;
 }
 
 /* Search bar */
