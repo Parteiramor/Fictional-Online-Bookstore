@@ -1,0 +1,22 @@
+{
+    "books": [
+        {
+            "title": "Clean Code",
+            "author": "Robert C. Martin",
+            "year": "2008",
+            "genre": "Science & Technology"
+        },
+        {
+            "title": "Design Patterns",
+            "author": "Eric Gamma, Richard Helm, Ralph Johnson, John Vlisides",
+            "year": "1994",
+            "genre": "Science & Technology"
+        },
+        {
+            "title": "To Kill a Mocingbird",
+            "author": "harper Lee",
+            "year": "1960",
+            "genre": "Fiction"
+        }
+    ]
+}
