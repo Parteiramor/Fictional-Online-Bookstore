@@ -35,14 +35,14 @@ document.getElementById("updateForm").addEventListener("submit", function(e) {
 
     if (!validateInput(title, author, year, genre)) return;
 
-    const book = books.find(b => b.title === title);        // Finds book by title
+    const book = books.find(b => b.title.toLowerCase() === title.toLowerCase());        // Finds book by title
     if (book) {
         book.author = author;       // Updates author
         book.year = year;           // Updates year
         book.genre = genre;         // Updates genre
         displayBooks();             // Refreshes table with updated data
     } else {
-        alert("Book not found.");      // Error if title does not exist
+        alert("Book not found.");   // Error if title does not exist
     }
 });
 
@@ -53,7 +53,7 @@ document.getElementById("removeForm").addEventListener("submit", function(e) {
     const index = books.findIndex(b => b.title === title);          // Finds index of book
     if (index !== -1) {
         books.splice(index, 1);         // Removes book from array
-        displayBooks();                 // refreshes table
+        displayBooks();                 // Refreshes table
     } else {
         alert("Book not found.");       // Error if title does not exist
     }
@@ -61,7 +61,7 @@ document.getElementById("removeForm").addEventListener("submit", function(e) {
 
 // Validation
 function validateInput(title, author, year, genre) {
-    if (title || !author || !genre || isNaN(year)) {
+    if (!title || !author || !genre || isNaN(year)) {
         alert("Please fill in all fields correctly.");      // Error message
         return false;           // Validation failed
     }

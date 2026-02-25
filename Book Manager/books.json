@@ -1,5 +1,4 @@
-{
-    "books": [
+[
         {
             "title": "Clean Code",
             "author": "Robert C. Martin",
@@ -13,10 +12,9 @@
             "genre": "Science & Technology"
         },
         {
-            "title": "To Kill a Mocingbird",
-            "author": "harper Lee",
+            "title": "To Kill a Mockingbird",
+            "author": "Harper Lee",
             "year": "1960",
             "genre": "Fiction"
         }
-    ]
-}
+]
