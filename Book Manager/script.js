@@ -1,3 +1,16 @@
+// Fetching the JSON file
+let books = [];
+
+fetch("books.json")
+    .then(response => response.json())
+    .then(data => {
+        books = data;
+        displayBooks();
+    })
+    .catch(error => console.error("Error loading JSON: ", error));
+
+
+// Displaying Books
 function displayBooks() {
     const tableBody = document.querySelector("#bookTable tbody"); // Selects the table body
     tableBody.innerHTML = ""; // Clears any existing rows
@@ -8,7 +21,7 @@ function displayBooks() {
             <td>${book.year}</td>
             <td>${book.genre}</td>
         </tr>`;
-        tableBody.innerHTML += row;
+        tableBody.innerHTML += row;      // Adds the row to the table
     });
 }
 
@@ -17,13 +30,15 @@ document.getElementById("updateForm").addEventListener("submit", function(e) {
     e.preventDefault();   // Prevents page reload on form submission
     const title = document.getElementById("updateTitle").value;     // Gets title input
     const author = document.getElementById("updateAuthor").value;   // Gets author input
-    const year = parseInt(document.getElementById("updateTitle").value);     // Converts year to number
+    const year = parseInt(document.getElementById("updateYear").value);     // Converts year to number
     const genre = document.getElementById("updateGenre").value;     // Gets genre input
+
+    if (!validateInput(title, author, year, genre)) return;
 
     const book = books.find(b => b.title === title);        // Finds book by title
     if (book) {
         book.author = author;       // Updates author
-        book.year - year;           // Updates year
+        book.year = year;           // Updates year
         book.genre = genre;         // Updates genre
         displayBooks();             // Refreshes table with updated data
     } else {
@@ -46,9 +61,9 @@ document.getElementById("removeForm").addEventListener("submit", function(e) {
 
 // Validation
 function validateInput(title, author, year, genre) {
-    if (titel || !author || !genre || isNaN(year)) {
+    if (title || !author || !genre || isNaN(year)) {
         alert("Please fill in all fields correctly.");      // Error message
         return false;           // Validation failed
     }
-    return true;                // Validtaion passsed
+    return true;                // Validtaion passed
 }
